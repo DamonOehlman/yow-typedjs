@@ -1,0 +1,19 @@
+.icon {
+  flex-grow: 1;
+  display: flex;
+}
+
+.icon svg {
+  width: 50vw;
+  height: 50vh;
+  fill: #fff;
+  margin: auto;
+}
+
+.icon.json svg {
+  fill: #fff;
+}
+
+.icon.nan svg {
+  width: 30vw;
+}

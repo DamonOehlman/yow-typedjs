@@ -1,0 +1,133 @@
+.bespoke-parent::after {
+  content: '';
+  background: url(images/canva.svg) no-repeat 50% 50%;
+  width: 70px;
+  height: 70px;
+  position: absolute;
+  opacity: 0.2;
+  bottom: 30px;
+  right: 35px;
+}
+
+.bespoke-slide {
+  height: auto;
+}
+
+.bespoke-slide ul, .bespoke-slide ol {
+  background: #232323;
+  padding: 4vh 2vw;
+  border-radius: 10px;
+  font-size: 0.8em;
+  border: 2px solid rgba(255, 255, 255, 0.6);
+}
+
+.bespoke-slide ul li {
+  color: #efefef;
+  margin-left: 3vw;
+}
+
+.bespoke-slide {
+  justify-content: unset;
+}
+
+.bespoke-slide h1 {
+  display: flex;
+  justify-content: center;
+  flex-grow: 1;
+  align-items: center;
+  font-size: 2em;
+  width: 70vw;
+  margin: 0 auto;
+}
+
+.bespoke-slide h1 + ul {
+  background: rgba(0, 0, 0, 0.8);
+  height: 80%;
+}
+
+.bespoke-slide ul ul {
+  background: none;
+  border: none;
+}
+
+.bespoke-slide ul:only-child {
+  margin: auto;
+}
+
+h2 + pre {
+  margin-top: 20px;
+}
+
+h2[raw="Interfaces"] ~ code.hljs {
+  font-size: 0.6em;
+}
+
+/* remove slide transition */
+
+.bespoke-parent {
+  transition: none;
+}
+
+.bespoke-bullet {
+  opacity: 1.0;
+  transition: 0.1s ease-in;
+}
+
+.bespoke-bullet.bespoke-bullet-inactive {
+  opacity: 0.1;
+  transform: translateY(0);
+}
+
+/* image backgrounds */
+
+.bespoke-slide .cc-image {
+  width: 100%;
+  height: 100%;
+  margin: -5% 0 0 -5%;
+  position: absolute;
+  z-index: -1;
+  overflow: hidden;
+}
+
+.bespoke-slide .cc-image > img {
+  width: calc(100% + 20px);
+  height: calc(100% + 20px);
+  margin: -10px;
+  object-fit: cover;
+}
+
+.bespoke-slide[data-cc-url]::after {
+  content: attr(data-cc-url);
+  background: rgba(0, 0, 0, 0.2);
+  padding: 8px;
+  font-size: 0.5em;
+  color: #eee;
+  position: absolute;
+  bottom: 0;
+  width: calc(90% - 16px);
+}
+
+.bespoke-slide .cc-image.blurred > img {
+  filter: blur(3px);
+}
+
+.bespoke-slide .cc-image.heavyblur > img {
+  filter: blur(7px);
+}
+
+/* presentation headers */
+
+.bespoke-slide:first-child::after, .bespoke-slide:last-child::after {
+  content: '@DamonOehlman';
+  color: lime;
+  font-family: 'Source Code Pro';
+  position: absolute;
+  margin: 0 auto;
+  text-align: center;
+  bottom: 45px;
+  width: 90%;
+}
+/* last slide */
+/*
+.icon.question::after {
+}*/

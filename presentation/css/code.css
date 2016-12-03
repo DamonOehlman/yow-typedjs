@@ -1,0 +1,74 @@
+pre {
+  width: 100ch;
+  margin: 0 auto;
+  font-size: 0.7em;
+  border-radius: 10px;
+  background: #222;
+  position: relative;
+}
+
+pre + pre {
+  margin-top: 1vh;
+}
+
+code.hljs {
+  margin: 3vh 2vw;
+  background: none;
+  padding: 0;
+}
+
+h4 {
+  font-family: 'Source Code Pro', monospace;
+  font-size: 0.7em;
+  width: 100%;
+  margin: 2vh auto 1vh;
+  padding-left: 2vw;
+  text-align: left;
+  max-width: 100ch;
+}
+
+h2 + h4 {
+  margin-top: 4vh;
+}
+
+h3 + pre {
+  margin-top: 2vh;
+}
+
+h4[raw="PASS"], h4[raw="FAIL"] {
+  margin: 0 auto;
+  color: transparent;
+  height: 0px;
+}
+
+h4[raw="PASS"] + pre, h4[raw="FAIL"] + pre {
+  margin-top: 1vh;
+} 
+
+h4[raw="PASS"] + pre::before, h4[raw="FAIL"] + pre::before {
+  content: '';
+  background-repeat: no-repeat;
+  background-position: 50% 50%; 
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  width: 30px;
+  height: 30px;
+  opacity: 0.7;
+}
+
+h4[raw="PASS"] + pre::before {
+  background-image: url(images/pass.svg);
+}
+
+h4[raw="FAIL"] + pre::before {
+  background-image: url(images/fail.svg);
+}
+
+h2[raw="Generic Types (Usage)"] ~ pre {
+  font-size: 0.6em;
+} 
+
+h2[raw="Flow"] ~ pre[lang="json"] > code {
+  font-size: 0.8em;
+}

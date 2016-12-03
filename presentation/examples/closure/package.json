@@ -1,0 +1,15 @@
+{
+  "name": "yow-typedjs-closure-examples",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "cc": "hardnosed-closure *.js | true",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Damon Oehlman <damon.oehlman@gmail.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "hardnosed-closure": "^1.2.0"
+  }
+}

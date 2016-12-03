@@ -1,0 +1,32 @@
+{
+  "name": "yow-typedjs-presentation",
+  "version": "1.0.0",
+  "description": "Presentation for YOW2016 on Typed JS",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "budo index.js"
+  },
+  "author": "Damon Oehlman <damon@canva.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "babelify": "^7.3.0",
+    "bespoke-bullets": "^1.1.0",
+    "bespoke-progress": "^1.0.0",
+    "bespoke-state": "^1.0.0",
+    "bespoke-theme-nebula": "^1.0.1",
+    "bespoke-theme-tweakable": "^1.0.1",
+    "brfs": "^1.4.3",
+    "budo": "^9.2.1",
+    "crel": "^3.0.0",
+    "shazam": "^2.0.0",
+    "shazamify": "^1.1.0"
+  },
+  "browserify": {
+    "transform": [
+      "shazamify",
+      "brfs",
+      "babelify"
+    ]
+  }
+}

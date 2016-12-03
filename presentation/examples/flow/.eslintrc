@@ -1,0 +1,28 @@
+{
+  "extends": [
+    "plugin:flowtype/recommended"
+  ],
+  "parser": "babel-eslint",
+  "rules": {
+    "flowtype/no-weak-types": 2,
+    "flowtype/require-parameter-type": [
+      2, {
+        "excludeArrowFunctions": "expressionsOnly"
+      }
+    ],
+    "flowtype/require-return-type": [
+      2,
+      "always", {
+        "excludeArrowFunctions": "expressionsOnly"
+      }
+    ]
+  },
+  "plugins": [
+    "flowtype"
+  ],
+  "settings": {
+    "flowtype": {
+      "onlyFilesWithFlowAnnotation": true
+    }
+  }
+}
