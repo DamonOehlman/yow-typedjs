@@ -1,13 +1,5 @@
-# TypeScript
-
-:::
-
-## Overview
-
-- Initial release: [Octoboer 2012](https://channel9.msdn.com/posts/Anders-Hejlsberg-Introducing-TypeScript)
-- Types defined inline with code, with [some JSDoc annotations supported](https://github.com/Microsoft/TypeScript/wiki/JSDoc-support-in-JavaScript).
-- Built with TypeScript
-- By far the most OO centric of the languages.
+# Syntax: TypeScript
+## (inline type definitions)
 
 :::
 
@@ -111,20 +103,3 @@
 #### FAIL
 
 <<< ../examples/typescript/string-literal-types.ts[19:19]
-
-:::
-
-## Pros
-
-- Great editor integration (obviously VS code is probably best)
-- Solid community around TypeScript
-- Largest number of 3rd party library type definitions, see: [DefinitelyTyped](https://github.com/DefinitelyTyped/DefinitelyTyped)
-- Fairly terse syntax for adding type information
-
-:::
-
-## Cons
-
-- Weak type enforcement by default (but fairly easy to make strict)
-- Some weird language features (e.g. interfaces extending classes)
-- Mappings from TypeScript → JS are a bit opaque

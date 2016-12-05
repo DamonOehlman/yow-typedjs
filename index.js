@@ -16,12 +16,13 @@ require('shazam')({
     fs.readFileSync(__dirname + '/css/deck.css', 'utf8')
   ],
   slides: [
-    s.md(require('./deck/intro.md')),
+    // s.md(require('./deck/intro.md')),
+    require('./deck/intro'),
     require('./deck/background'),
     require('./deck/typed-js-overview'),
     s.md(require('./deck/closure-compiler.md')),
     s.md(require('./deck/typescript.md')),
-    s.md(require('./deck/flow.md')),
+    // s.md(require('./deck/flow.md')),
     require('./deck/getting-strict-intro'),
     s.md(require('./deck/strict-options.md')),
     require('./deck/typed-js-caveats'),
