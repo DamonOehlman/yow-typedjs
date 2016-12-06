@@ -13,6 +13,14 @@
   height: auto;
 }
 
+.bespoke-slide a, .bespoke-slide a:visited {
+  color: #a9ff6a;
+}
+
+.bespoke-parent .bespoke-slide h1 {
+  font-size: 3em;
+}
+
 .bespoke-slide ul, .bespoke-slide ol {
   background: #232323;
   padding: 4vh 2vw;
@@ -45,13 +53,22 @@
   height: 80%;
 }
 
-.bespoke-slide ul ul {
+.bespoke-slide ul ul, .bespoke-slide ul ol {
   background: none;
   border: none;
+  margin: 0;
+  padding: 0;
 }
 
 .bespoke-slide ul:only-child {
   margin: auto;
+}
+
+.bespoke-slide.flowdemo img {
+  width: 70vw;
+  height: 100%;
+  margin: 0 auto;
+  object-fit: contain;
 }
 
 h2 + pre {
@@ -117,15 +134,40 @@ h2[raw="Interfaces"] ~ code.hljs {
 
 /* presentation headers */
 
-.bespoke-slide:first-child::after, .bespoke-slide:last-child::after {
+.bespoke-slide:first-child::after {
   content: '@DamonOehlman';
-  color: lime;
+  color: #a9ff6a;
   font-family: 'Source Code Pro';
   position: absolute;
   margin: 0 auto;
   text-align: center;
   bottom: 45px;
   width: 90%;
+}
+
+/* last slide, resources */
+
+ul.resources {
+  border: 0;
+  list-style: none;
+}
+
+ul.resources li {
+  /*border: 2px solid white;*/
+  padding: 5px 20px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  background: #305b79;
+}
+
+ul.resources label {
+  display: inline-block;
+  width: 30%;
+  font-weight: bold;
+}
+
+ul.resources a, ul.resources a:visited {
+  color: white;
 }
 /* last slide */
 /*

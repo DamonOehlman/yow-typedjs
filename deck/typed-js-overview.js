@@ -7,15 +7,44 @@ module.exports = [
   s()
     .h1('Why Typed JS?')
     .h2('is it worth it the hassle?'),
-  // s()
-  //   .h1('YES')
-  //   .h2('but it does take some work...'),
-  s().h1('Let\'s talk features'),
-  icon('shield', 'null (and undefined) Safety'),
-  icon('typesys', 'type system constructs'),
-  // icon('compiler', '"Compile time" type checks'),
-  icon('nan', 'Some protection against type coercion'),
-  icon('inference', 'Some type inference'),
+
   s()
-    .h1('Let\'s talk tools')
+    .crel('div', { class: 'cc-image' }, [
+      crel('img', { src: 'images/knights.jpg' })
+    ])
+    .h1('Guards')
+    .data('ccUrl', 'https://www.flickr.com/photos/38446022@N00/8243227928/')
+    .data('ccAuthor', 'Josh Wedin'),
+
+  s()
+    .crel('div', { class: 'cc-image blurred' }, [
+      crel('img', { src: 'images/constructs.jpg' })
+    ])
+    .h1('Type System Constructs')
+    .data('ccUrl', 'https://www.flickr.com/photos/38446022@N00/8243227928/')
+    .data('ccAuthor', 'Chris Eason'),
+
+  s()
+    .crel('div', { class: 'cc-image' }, [
+      crel('img', { src: 'images/chemistry.jpg' })
+    ])
+    .h1('Protection against type coercion')
+    .data('ccUrl', 'https://www.flickr.com/photos/yuvi/2422215548/')
+    .data('ccAuthor', 'Yuvi Panda'),
+
+  s()
+    .crel('div', { class: 'cc-image' }, [
+      crel('img', { src: 'images/footprints.jpg' })
+    ])
+    .h1('Type inference')
+    .data('ccUrl', 'https://www.flickr.com/photos/66176388@N00/16382841365/')
+    .data('ccAuthor', 'Mark Robinson'),
+
+  s()
+    .crel('div', { class: 'cc-image blurred' }, [
+      crel('img', { src: 'images/balloons.jpg' })
+    ])
+    .h1('Reduced Testing Weight')
+    .data('ccUrl', 'https://www.flickr.com/photos/swamibu/2425212607/')
+    .data('ccAuthor', 'Farrukh'),
 ];

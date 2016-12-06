@@ -1,5 +1,5 @@
 # Syntax: Closure Compiler
-## (JSDoc style)
+## ( JSDoc style annotations )
 
 :::
 

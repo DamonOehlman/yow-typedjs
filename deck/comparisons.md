@@ -1,4 +1,6 @@
-## Closure Compiler
+# Closure Compiler
+
+[https://developers.google.com/closure/compiler/](https://developers.google.com/closure/compiler/)
 
 - First public release: [November 2009](http://googlecode.blogspot.com.au/2009/11/introducing-closure-tools.html)
 - Type definitions are expressed in [JSDoc](http://usejsdoc.org/) style comments.
@@ -6,6 +8,8 @@
 - Commonly used as a JS compressor (prior to tools like Uglify).
 - Designed to work seamlessly with the [Closure Library](https://developers.google.com/closure/library/docs/gettingstarted).
 - TIL: Some inline type syntax valid for ES6 classes.
+
+:::
 
 ## Pros
 
@@ -27,7 +31,9 @@
 
 :::
 
-## TypeScript
+# TypeScript
+
+[https://www.typescriptlang.org/](https://www.typescriptlang.org/)
 
 - Initial release: [Octoboer 2012](https://channel9.msdn.com/posts/Anders-Hejlsberg-Introducing-TypeScript)
 - Types defined inline with code, with [some JSDoc annotations supported](https://github.com/Microsoft/TypeScript/wiki/JSDoc-support-in-JavaScript).
@@ -38,22 +44,24 @@
 
 ## Pros
 
-- Great editor integration (obviously VS code is probably best)
+- Great editor integration (VS code is probably the best free option)
 - Solid community around TypeScript
 - Largest number of 3rd party library type definitions, see: [DefinitelyTyped](https://github.com/DefinitelyTyped/DefinitelyTyped)
-- Fairly terse syntax for adding type information
+- Terse syntax for adding type information
 
 :::
 
 ## Cons
 
-- Weak type enforcement by default (but fairly easy to make strict)
+- Weak type enforcement by default (but easy to make strict)
 - Some weird language features (e.g. interfaces extending classes)
 - Mappings from TypeScript → JS are a bit opaque
 
 :::
 
-## Flow
+# Flow
+
+[https://flowtype.org/](https://flowtype.org/)
 
 - Initial release: [November 2014](https://code.facebook.com/posts/1505962329687926/flow-a-new-static-type-checker-for-javascript/)
 - Types defined inline with code
@@ -69,12 +77,17 @@
 - Types defined as not nullable by default.
 - Doesn't go over the top with language features.
 - Doesn't force you into either OO or FP
+- Plays nice with other tools
+- Developed with OCaml
 
 :::
 
 ## Cons
 
-- Some very weak validation in parts (can be supplmented with eslint rules)
+- Some very weak validation in parts, but:
+  1. Can be supplemented with eslint rules
+  2. Type coverage tools are fantastic
+  
 - Setting up a development environment is an adventure in tool chains
 - Still under heavy development
 

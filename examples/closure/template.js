@@ -11,10 +11,10 @@ class List {
 
   /**
    * @param {!function(T,T):number} comparator
-   * @return {!Array<T>}
+   * @return {!List<T>}
    */
   immutableSort(comparator) {
-    return this.items.slice(0).sort(comparator);
+    return new List(this.items.slice(0).sort(comparator));
   }
 }
 

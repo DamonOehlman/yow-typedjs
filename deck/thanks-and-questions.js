@@ -4,8 +4,29 @@ const fs = require('fs');
 const icon = require('./icon');
 
 module.exports = [
-  icon('opinion', 'Opinions / Recommendations'),
-  icon('question', 'Questions')
+  // icon('opinion', 'Opinions / Recommendations'),
+  s()
+    .h1('Thanks')
+    .crel('ul', { class: 'resources' }, [
+      crel('li', crel('div', [
+        crel('label', 'Slides: '),
+          crel('a', {
+          href: 'https://damonoehlman.github.io/yow-typedjs/'
+        }, 'https://damonoehlman.github.io/yow-typedjs/' )
+      ])),
+      crel('li', crel('div', [
+        crel('label', 'Sample Project: '),
+          crel('a', {
+          href: 'https://github.io/DamonOehlman/yow-typedjs/'
+        }, 'https://github.io/DamonOehlman/yow-typedjs/' )
+      ])),
+      crel('li', crel('div', [
+        crel('label', 'Twitter: '),
+          crel('a', {
+          href: 'https://twitter.com/DamonOehlman/'
+        }, '@DamonOehlman' )
+      ])),
+    ])
 
   // s()
   //   .h1('More ')

@@ -4,8 +4,9 @@ const fs = require('fs');
 require('shazam')({
   title: 'A simple presentation system',
   theme: require('bespoke-theme-tweakable')({
-    primaryFont: 'Quicksand',
-    codeFont: 'Source Code Pro'
+    headerFont: 'Josefin Sans',
+    displayFont: 'Open Sans',
+    codeFont: 'Fira Mono'
   }),
   plugins: [
     require('bespoke-bullets')('pre')
@@ -22,11 +23,16 @@ require('shazam')({
     require('./deck/typed-js-overview'),
     s.md(require('./deck/closure-compiler.md')),
     s.md(require('./deck/typescript.md')),
+    s({ class: 'flowdemo' })
+      .h1('Demo Time')
+      .crel('img', { src: 'images/flow-logo.png' })
+      .h1('❂‿❂'),
     // s.md(require('./deck/flow.md')),
-    require('./deck/getting-strict-intro'),
-    s.md(require('./deck/strict-options.md')),
+    // require('./deck/getting-strict-intro'),
+    // s.md(require('./deck/strict-options.md')),
     require('./deck/typed-js-caveats'),
     s.md(require('./deck/typed-js-caveats-examples.md')),
+    s.md(require('./deck/comparisons.md')),
     require('./deck/thanks-and-questions')
   ]
 });

@@ -5,8 +5,8 @@ class List<T> {
     this.items = items;
   }
 
-  immutableSort(comparator: (a: T, b: T) => number): Array<T> {
-    return this.items.slice(0).sort(comparator);
+  immutableSort(comparator: (a: T, b: T) => number): List<T> {
+    return new List(this.items.slice(0).sort(comparator));
   }
 }
 

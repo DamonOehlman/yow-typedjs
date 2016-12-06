@@ -4,8 +4,10 @@ const fs = require('fs');
 const icon = require('./icon');
 
 module.exports = [
+  s().h1('The past present and future of typed JS (or ECMAScript)'),
   s()
-    .h1('The past present and future of typed JS (or ECMAScript)'),
+    .h1('http://bit.ly/typedjs-users')
+    .h2('audience participation')
   // icon('browser', 'Dealing with the DOM'),
   // icon('serialization', 'I/O (Mainly input'),
   // icon('libraries', '3rd party libraries'),
