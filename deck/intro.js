@@ -5,11 +5,9 @@ const icon = require('./icon');
 
 module.exports = [
   s().h1('The past present and future of typed JS (or ECMAScript)'),
-  s()
-    .h1('http://bit.ly/typedjs-users')
-    .h2('audience participation')
-  // icon('browser', 'Dealing with the DOM'),
-  // icon('serialization', 'I/O (Mainly input'),
-  // icon('libraries', '3rd party libraries'),
-  // icon('lazy', 'Feeling too comfortable with type checking')
+  s({ class: 'typedjs-users' })
+    .crel('a', { href: 'http://bit.ly/typedjs-users' }, 'http://bit.ly/typedjs-users')
+    .crel('div', { class: 'cc-image' }, [
+      crel('img', { src: 'images/audience.jpg' })
+    ])
 ];

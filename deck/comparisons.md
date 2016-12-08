@@ -48,12 +48,12 @@
 - Solid community around TypeScript
 - Largest number of 3rd party library type definitions, see: [DefinitelyTyped](https://github.com/DefinitelyTyped/DefinitelyTyped)
 - Terse syntax for adding type information
+- Can easily strengthen type checking with configuration settings.
 
 :::
 
 ## Cons
 
-- Weak type enforcement by default (but easy to make strict)
 - Some weird language features (e.g. interfaces extending classes)
 - Mappings from TypeScript → JS are a bit opaque
 
@@ -87,10 +87,6 @@
 - Some very weak validation in parts, but:
   1. Can be supplemented with eslint rules
   2. Type coverage tools are fantastic
-  
+
 - Setting up a development environment is an adventure in tool chains
 - Still under heavy development
-
-:::
-
-# What did I like best?

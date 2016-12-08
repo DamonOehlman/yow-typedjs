@@ -1,12 +1,12 @@
 const s = require('shazam/slide');
 const fs = require('fs');
+const crel = require('crel');
 
 require('shazam')({
-  title: 'A simple presentation system',
+  title: 'Typed JS',
   theme: require('bespoke-theme-tweakable')({
     headerFont: 'Josefin Sans',
-    displayFont: 'Open Sans',
-    codeFont: 'Fira Mono'
+    displayFont: 'Open Sans'
   }),
   plugins: [
     require('bespoke-bullets')('pre')
@@ -23,16 +23,18 @@ require('shazam')({
     require('./deck/typed-js-overview'),
     s.md(require('./deck/closure-compiler.md')),
     s.md(require('./deck/typescript.md')),
-    s({ class: 'flowdemo' })
-      .h1('Demo Time')
-      .crel('img', { src: 'images/flow-logo.png' })
-      .h1('❂‿❂'),
+    s()
+      .crel('div', { class: 'cc-image blurred' }, [
+        crel('img', { src: 'images/demo-time.jpg' })
+      ])
+      .h1('Demo Time'),
     // s.md(require('./deck/flow.md')),
     // require('./deck/getting-strict-intro'),
     // s.md(require('./deck/strict-options.md')),
     require('./deck/typed-js-caveats'),
     s.md(require('./deck/typed-js-caveats-examples.md')),
     s.md(require('./deck/comparisons.md')),
+    require('./deck/recommendations'),
     require('./deck/thanks-and-questions')
   ]
 });

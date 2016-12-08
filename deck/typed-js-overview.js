@@ -5,9 +5,19 @@ const icon = require('./icon');
 
 module.exports = [
   s()
-    .h1('Why Typed JS?')
-    .h2('is it worth it the hassle?'),
-
+    .crel('div', { class: 'cc-image' }, [
+      crel('img', { src: 'images/city-map.jpg' })
+    ])
+    .h1('What are we covering?')
+    .ul([
+      'Brief intro to what typed JS is and why you\'d consider using it',
+      'A whirlwind tour of Closure Compiler and TypeScript',
+      'A play around with some flow code (the new kid on the block)',
+      'Covering off some caveats',
+      'Some personal opinions and recommendations'
+    ]),
+  s()
+    .h1('Why Typed JS?'),
   s()
     .crel('div', { class: 'cc-image' }, [
       crel('img', { src: 'images/knights.jpg' })

@@ -43,12 +43,12 @@ h4[raw="PASS"], h4[raw="FAIL"] {
 
 h4[raw="PASS"] + pre, h4[raw="FAIL"] + pre {
   margin-top: 1vh;
-} 
+}
 
 h4[raw="PASS"] + pre::before, h4[raw="FAIL"] + pre::before {
   content: '';
   background-repeat: no-repeat;
-  background-position: 50% 50%; 
+  background-position: 50% 50%;
   position: absolute;
   top: 15px;
   right: 15px;
@@ -63,12 +63,4 @@ h4[raw="PASS"] + pre::before {
 
 h4[raw="FAIL"] + pre::before {
   background-image: url(images/fail.svg);
-}
-
-h2[raw="Generic Types (Usage)"] ~ pre {
-  font-size: 0.6em;
-} 
-
-h2[raw="Flow"] ~ pre[lang="json"] > code {
-  font-size: 0.8em;
 }
