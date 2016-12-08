@@ -1,12 +1,18 @@
+body::after {
+  content: 'hello';
+  position: absolute;
+  right: 90vw;
+}
+
 .bespoke-parent::after {
   content: '';
   background: url(images/canva.svg) no-repeat 50% 50%;
-  width: 70px;
-  height: 70px;
+  width: 120px;
+  height: 120px;
   position: absolute;
-  opacity: 0.5;
-  bottom: 30px;
-  left: 35px;
+  opacity: 0.8;
+  bottom: 25px;
+  left: calc(50% - 60px);
 }
 
 .bespoke-slide {
@@ -35,7 +41,7 @@
   width: 100%;
   background: rgba(0, 0, 0, 0.5);
   margin-left: -5%;
-  padding: 20px 0 10px;
+  padding: 20px 0 40px;
 }
 
 .bespoke-slide ul li {
@@ -121,7 +127,7 @@ h2 + pre {
 .bespoke-slide[data-cc-url]::after {
   content: attr(data-cc-author) ' ⇢ ' attr(data-cc-url);
   background: rgba(0, 0, 0, 0.2);
-  padding: 18px 0;
+  padding: 40px 0;
   font-size: 0.6em;
   color: #eee;
   position: absolute;
@@ -140,13 +146,19 @@ h2 + pre {
 
 /* presentation headers */
 
-.bespoke-slide:first-child::after {
+body::after {
   content: '@DamonOehlman';
   color: #a9ff6a;
+  background: 'black';
   font-family: 'Source Code Pro';
   position: absolute;
-  right: 35px;
-  bottom: 45px;
+  padding: 10px 0;
+  font-size: 0.9em;
+  left: 0px;
+  bottom: 0px;
+  width: 100vw;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.8);
 }
 
 /* last slide, resources */
@@ -176,13 +188,15 @@ ul.resources a, ul.resources a:visited {
 
 /* typed js users slide */
 
-.bespoke-slide.typedjs-users {
-  justify-content: center;
-}
-
 .bespoke-slide.typedjs-users a, .bespoke-slide.typedjs-users a:visited {
-  font-size: 1.8em;
+  background: rgba(0, 0, 0, 0.1);
   color: white;
+  display: flex;
+  justify-content: center;
+  flex-grow: 1;
+  align-items: center;
+  font-size: 1.6em;
+  width: 100%;
 }
 
 /* last slide */
