@@ -7,4 +7,7 @@ module.exports = [
       crel('img', { src: 'images/demo-time.jpg' })
     ])
     .h1('Demo Time')
+    .crel('a', {
+      href: 'https://github.com/DamonOehlman/typed-github-demo'
+    }, 'https://github.com/DamonOehlman/typed-github-demo')
 ];
