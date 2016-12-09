@@ -24,7 +24,7 @@ require('shazam')({
     s.md(require('./deck/closure-compiler.md')),
     s.md(require('./deck/typescript.md')),
     require('./deck/demo'),
-    // s.md(require('./deck/flow.md')),
+    s.md(require('./deck/flow.md')),
     // require('./deck/getting-strict-intro'),
     // s.md(require('./deck/strict-options.md')),
     require('./deck/typed-js-caveats'),
