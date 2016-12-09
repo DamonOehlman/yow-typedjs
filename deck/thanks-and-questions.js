@@ -4,6 +4,13 @@ const fs = require('fs');
 const icon = require('./icon');
 
 module.exports = [
+  s()
+    .crel('div', { class: 'cc-image' }, [
+      crel('img', { src: 'images/crow.jpg' })
+    ])
+    .data('ccUrl', 'https://www.flickr.com/photos/andymorffew/15416664190/')
+    .data('ccAuthor', 'Andy Morffew'),
+
   // icon('opinion', 'Opinions / Recommendations'),
   s()
     .h1('Thanks')

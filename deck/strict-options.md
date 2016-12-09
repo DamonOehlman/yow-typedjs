@@ -33,11 +33,9 @@ visibility
 
 ## Flow
 
-#### Use additional tools
+### (Use Additional Tooling)
 
-- flow-coverage-report
-- eslint
-
-#### ESLint with flow aware plugins
+#### `flow-coverage-report`
+#### `eslint` with flow aware plugins
 
 <<<json ../examples/flow/.eslintrc
