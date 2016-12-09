@@ -1,5 +1,7 @@
 # The Past, Present and Future Of Typed JS (ECMAScript)
 
+(The below is a collection of my thoughts and resources in preparing for the talk, for the actual talk content, see the actual [talk](https://damonoehlman.github.io/yow-typedjs/))
+
 ## Language Facts
 
 - Closure Compiler - Nominal Typing
