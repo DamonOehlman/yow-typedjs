@@ -16,17 +16,16 @@
 - All in one solution, combining a static type checker + cross compiler (e.g. ES6 ⇾ ES5).
 - Compiler with advanced optimizations enabled is pretty amazing.
 - Very mature project with the ability to apply very strict typing.
-- Can be added incrementally to a project (with reports of type coverage)
+- Can be added incrementally to a project (with reports of type coverage).
 
 :::
 
 ## Cons
 
 - Providing explicit type information requires quite verbose syntax.
-- Type inference is in flux
+- Type inference technique is changing (OTI vs NTI).
 - Limited externs definitions for JS libraries available.
-- Compiler with advanced optimizations enabled can be hard to get your head around.
-- Some of the cool tricks that newer type checkers aren't implemented in cc.
+- Compiler with advanced optimizations enabled can be hard to debug.
 - Not _quite_ at the "cutting edge" anymore (but still in active development).
 
 :::
@@ -35,27 +34,28 @@
 
 [https://www.typescriptlang.org/](https://www.typescriptlang.org/)
 
-- Initial release: [Octoboer 2012](https://channel9.msdn.com/posts/Anders-Hejlsberg-Introducing-TypeScript)
+- Initial release: [October 2012](https://channel9.msdn.com/posts/Anders-Hejlsberg-Introducing-TypeScript)
 - Types defined inline with code, with [some JSDoc annotations supported](https://github.com/Microsoft/TypeScript/wiki/JSDoc-support-in-JavaScript).
 - Built with TypeScript
-- By far the most OO centric of the languages.
+- Probably the most OO centric of the languages.
 
 :::
 
 ## Pros
 
-- Great editor integration (VS code is probably the best free option)
-- Solid community around TypeScript
+- Great editor integration (VS code is probably the best free option).
+- Very active community around TypeScript (best of all three options).
 - Largest number of 3rd party library type definitions, see: [DefinitelyTyped](https://github.com/DefinitelyTyped/DefinitelyTyped)
-- Terse syntax for adding type information
+- Nice, terse syntax for adding type information
 - Can easily strengthen type checking with configuration settings.
 
 :::
 
 ## Cons
 
-- Some weird language features (e.g. interfaces extending classes)
-- Mappings from TypeScript → JS are a bit opaque
+- Some weird language features (e.g. interfaces extending classes).
+- Mappings from TypeScript → JS are a bit opaque.
+- Less "opt-in" than the other tools.
 
 :::
 
@@ -64,29 +64,28 @@
 [https://flowtype.org/](https://flowtype.org/)
 
 - Initial release: [November 2014](https://code.facebook.com/posts/1505962329687926/flow-a-new-static-type-checker-for-javascript/)
-- Types defined inline with code
-- Built with OCaml
-- Classes are nominally typed, Interfaces are structurally typed
-- Not a compiler, but a static type checker
+- Types defined inline with code (as per TypeScript).
+- Built with OCaml.
+- Not a compiler, but a static type checker.
 
 :::
 
 ## Pros
 
-- Very solid editor integration (Atom, VSCode, etc)
+- Solid editor integration (Atom, VSCode, etc).
 - Types defined as not nullable by default.
 - Doesn't go over the top with language features.
-- Doesn't force you into either OO or FP
-- Plays nice with other tools
-- Developed with OCaml
+- Doesn't force you into either OO or FP.
+- Plays nice with other tools.
+- Developed with OCaml (very personal opinion here).
 
 :::
 
 ## Cons
 
-- Some very weak validation in parts, but:
+- Permits weak type validation (`any` types are not type checker errors), but:
   1. Can be supplemented with eslint rules
-  2. Type coverage tools are fantastic
+  2. Type coverage tools are fantastic and supplement guards when falling back to `any` types.
 
-- Setting up a development environment is an adventure in tool chains
-- Still under heavy development
+- Setting up a development environment is an adventure in tool chains (eslint, babel, etc).
+- Still under heavy development (features like `$Keys()` is unstable).

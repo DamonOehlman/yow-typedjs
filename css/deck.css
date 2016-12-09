@@ -17,6 +17,7 @@ body::after {
 
 .bespoke-slide {
   height: auto;
+  overflow: hidden;
 }
 
 .bespoke-slide a, .bespoke-slide a:visited {
@@ -29,10 +30,19 @@ body::after {
 
 .bespoke-slide ul, .bespoke-slide ol {
   background: #232323;
-  padding: 4vh 2vw;
+  padding: 3vh 2vw;
   border-radius: 10px;
   font-size: 0.8em;
-  border: 2px solid rgba(255, 255, 255, 0.6);
+  margin: 0;
+}
+
+.bespoke-slide ul li {
+  color: #efefef;
+  margin: 0 4vw;
+}
+
+h2 + ul, h2 + ol {
+  transform: translateY(2vh);
 }
 
 .bespoke-slide .bottom-heading {
@@ -42,11 +52,6 @@ body::after {
   background: rgba(0, 0, 0, 0.5);
   margin-left: -5%;
   padding: 20px 0 40px;
-}
-
-.bespoke-slide ul li {
-  color: #efefef;
-  margin-left: 3vw;
 }
 
 .bespoke-slide {

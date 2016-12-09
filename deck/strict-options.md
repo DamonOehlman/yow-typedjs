@@ -27,11 +27,16 @@ visibility
 
 #### Use a tsconfig.json file
 
-<<< ../examples/typescript/tsconfig.json
+<<<json ../examples/typescript/tsconfig.json
 
 :::
 
 ## Flow
+
+#### Use additional tools
+
+- flow-coverage-report
+- eslint
 
 #### ESLint with flow aware plugins
 

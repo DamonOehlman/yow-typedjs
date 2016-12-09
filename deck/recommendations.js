@@ -15,5 +15,5 @@ module.exports = [
     .crel('div', { class: 'cc-image' }, [
       crel('img', { src: 'images/explore.jpg' })
     ])
-    .h1('Explore'),
+    .h1('Explore')
 ];

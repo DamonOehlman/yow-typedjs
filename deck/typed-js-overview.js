@@ -4,6 +4,10 @@ const fs = require('fs');
 const icon = require('./icon');
 
 module.exports = [
+  // s()
+  //   .crel('div', { class: 'cc-image' }, [
+  //     crel('img', { src: 'images/bread.jpg' })
+  //   ]),
   s()
     .crel('div', { class: 'cc-image' }, [
       crel('img', { src: 'images/city-map.jpg' })

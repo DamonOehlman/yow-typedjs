@@ -23,11 +23,7 @@ require('shazam')({
     require('./deck/typed-js-overview'),
     s.md(require('./deck/closure-compiler.md')),
     s.md(require('./deck/typescript.md')),
-    s()
-      .crel('div', { class: 'cc-image blurred' }, [
-        crel('img', { src: 'images/demo-time.jpg' })
-      ])
-      .h1('Demo Time'),
+    require('./deck/demo'),
     // s.md(require('./deck/flow.md')),
     // require('./deck/getting-strict-intro'),
     // s.md(require('./deck/strict-options.md')),

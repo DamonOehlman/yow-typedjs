@@ -52,8 +52,6 @@ interface jQuery {
 
 <<<ts ../examples/typescript/map-object-keys.ts[:4]
 
-<<<ts ../examples/typescript/map-object-keys.ts[6:8]
-
 #### PASS
 <<<ts ../examples/typescript/map-object-keys.ts[9:10]
 
